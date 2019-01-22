@@ -1,25 +1,62 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <meta charset="utf-8"> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Example Student's HCDE 439 Physical Computing Page!</title> 
+        <title>Willa Yang's HCDE 439 Physical Computing Page!</title>
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
-    </head> 
-    <body> 
-
+    </head>
+    <body>
         <div class="header">
-            <h1>Example Student's Assignment 2!</h1>
-            <p>
-            <img src="red-panda.jpg" width=400></a>
-            </p>
-            <p>
-            Here is all the documentation for assignment 2!
-            </p>
+            <h1>Willa Yang's Assignment 2!</h1>
+            <img src="h2/P.jpg" width=400>
         </div>
-        
+        <div class="formula">
+            <br />Here is all the documentation for assignment 2!
+            <br /><MATH> V<sub>green</sub> = V<sub>red</sub> = 1.8V
+            <br />V<sub>blue</sub> = 3.3V
+            <br />I = 0.02A
+            <br />
+            <br />For green and red LEDs,
+            <br />V<sub>green</sub> + V<sub>R</sub> = 5V
+            <br />V<sub>R</sub> = 5 - V<sub>green</sub> = 3.2V
+            <br />R = V<sub>R</sub> / I = 3.2 / 0.02 = 160&#8486;
+            <br />So for resistors in circuits with green, yellow, or red LED, any resistor that is larger than 160&#8486; can be used. I chose 1000&#8486;
+            <br />
+            <br />For the blue LED,
+            <br />V<sub>blue</sub> + V<sub>R</sub> = 5V
+            <br />V<sub>R</sub> = 5 - V<sub>blue</sub> = 1.7V
+            <br />R = V<sub>R</sub> / I = 1.7 / 0.02 = 85&#8486;
+            <br />So for resistors in circuits with a blue LED, any resistor that is larger than 85&#8486; can be used. I chose 1000&#8486;
+            <br />for resistors that connect with buttons,
+            <br />5V / 0.02A = 250&#8486;
+            <br />So any resistors larger than 250&#8486; can be used. </MATH>
+        </div>
+        <div>
+
+            <br /><img src="h2/S.JPG" width=600>
+            <br />Schematic
+            <br />
+            <br />
+            <br /><img src="h2/C.JPG" width=600>
+            <br />Circuit
+            <br />
+            <br />
+            <br /><img src="h2/setup.png" width=600>
+            <br />Code (setup)
+            <br /><img src="h2/loop1.png" width=600>
+            <br /><img src="h2/loop2.png" width=600>
+            <br />Code (loop)
+            <br />
+            <br /><img src="h2/video.gif" width=600>
+            <br />Operation -- LEDs will turn on from outside to inside, the middle one is the RGB LED.
+            <br />There are three buttons that control the three colors of the RGB LED.
+            <br />
+            <br />
+            <br />
+        </div>
     </body>
 </html>
