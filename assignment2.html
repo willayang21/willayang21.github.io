@@ -31,6 +31,7 @@
             <br />V<sub>R</sub> = 5 - V<sub>blue</sub> = 1.7V
             <br />R = V<sub>R</sub> / I = 1.7 / 0.02 = 85&#8486;
             <br />So for resistors in circuits with a blue LED, any resistor that is larger than 85&#8486; can be used. I chose 1000&#8486;
+            <br />
             <br />for resistors that connect with buttons,
             <br />5V / 0.02A = 250&#8486;
             <br />So any resistors larger than 250&#8486; can be used. </MATH>
@@ -38,24 +39,25 @@
         <div>
 
             <br /><img src="h2/S.JPG" width=600>
-            <br />Schematic
+            <br />Schematic - there are three buttons that control the three colors of the RGB LED (analog). 
+            <br />pin 4, 5, 6, 8 are digital, pin 9, 10, 11 are analog.
             <br />
             <br />
             <br /><img src="h2/C.JPG" width=600>
-            <br />Circuit
-            <br />
+            <br />Circuit - Whichever button is pressed, the outer LEDs (digital) will light up from outside to inside 
+            <br />The middle RGB LED will have the fading effect.
             <br />
             <br /><img src="h2/setup.png" width=600>
-            <br />Code (setup)
             <br /><img src="h2/loop1.png" width=600>
             <br /><img src="h2/loop2.png" width=600>
-            <br />Code (loop)
+            <br />Code
             <br />
             <br /><img src="h2/video.gif" width=600>
-            <br />Operation -- LEDs will turn on from outside to inside, the middle one is the RGB LED.
-            <br />There are three buttons that control the three colors of the RGB LED.
-            <br />
-            <br />
+            <br />Operation -- the middle LED is the RGB LED, others are ordinary LEDs
+            <br />The three buttons control the three colors of the RGB LED respectively.
+            <br />The middle LED will fade.
+            <br />Whichever button is pressed, the outer LEDs (digital) will light up from outside to inside
+            <br />and turn off from inside to outside
             <br />
         </div>
     </body>

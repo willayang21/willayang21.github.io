@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Willa Yang's HCDE 439 Physical Computing Page!</title>
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Willa Yang's Assignment 3!</h1>
+            <img src="h3/p.JPG" width=400>
+        </div>
+        <div class="formula">
+            <br />Here is all the documentation for assignment 3!
+            <br /><MATH> V<sub>green</sub> = V<sub>red</sub> = 1.8V
+            <br />V<sub>blue</sub> = 3.3V
+            <br />I = 0.02A
+            <br />
+            <br />For green, yellow and red LEDs,
+            <br />V<sub>green</sub> + V<sub>R</sub> = 5V
+            <br />V<sub>R</sub> = 5 - V<sub>green</sub> = 3.2V
+            <br />R = V<sub>R</sub> / I = 3.2 / 0.02 = 160&#8486;
+            <br />So for resistors in circuits with green, yellow, or red LED, any resistor that is larger than 160&#8486; can be used. I chose 1000&#8486;
+            <br />Here I use 1k.
+            <br />
+            <br />For the resistor with the photoresistor,
+            <br />5V / 0.02A = 250&#8486;
+            <br />So any resistors larger than 250&#8486; can be used. Here I use 10k.
+            <br />
+            <br /><img src="h3/data.gif" width=600>
+            <br />The sensor reads from 448 to 867 out of 1023
+            <br />so the voltage of the photoresistor ranges from 5*448/1023 = 2.19V,
+            <br />to 5*867/1023 = 4.24V
+            <br />For resistance,
+            <br />I<sub>small</sub> = (5 - 2.19) / 1000 = 0.00281A
+            <br />I<sub>big</sub> = (5 - 4.24) / 1000 = 0.00076A
+            <br />R<sub>small</sub> = 2.19V / 0.00281A = 779&#8486;
+            <br />R<sub>big</sub> = 4.24V / 0.00076A = 5579&#8486;
+            <br />Resistance ranges from 779 to 5579&#8486;
+            <br />
+              </MATH>
+        </div>
+        <div>
+            <br /><img src="h3/s.JPG" width=600>
+            <br />Schematic - there are two LEDs that are controled by the photoresistor.
+            <br />A0 measures the voltage of the photoresistor. 
+            <br />
+            <br /><img src="h3/p.JPG" width=600>
+            <br />Circuit - the two LEDs have inverse effects.
+            <br />
+            <br /><img src="h3/setup.png" width=600>
+            <br /><img src="h3/loop.png" width=600>
+            <br />Code
+            <br />
+            <br /><img src="h3/v.gif" width=600>
+            <br />Operation -- when value read from the sensor is larger than 800,
+            <br />one LED will be completely on, the other will be off.
+            <br />Otherwise, the two LEDs will fade inversely.
+        </div>
+    </body>
+</html>
