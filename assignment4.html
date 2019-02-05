@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Willa Yang's HCDE 439 Physical Computing Page!</title>
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Willa Yang's Assignment 4!</h1>
+            <img src="h4/p.JPG" width=400>
+        </div>
+        <div class="formula">
+            <br />Here is all the documentation for assignment 3!
+            <br />I used 93 LEDs in total
+            <br />18W * (93/300) = 5.58W
+            <br />I = 5.58W / 12V = 0.465A
+            <br />So, the maximum current that goes through the transistor should be 0.465A, which is smaller than 0.6A
+            <br />I also added an ammeter to see how the current changes with the lighting.
+            <br />
+            <br />For the resistor that connects with the transistor:
+            <br />The ideal current that flows through the microcontroller is 0.02A,
+            <br />To protect it, 12V / 0.02A = 600&#8486;, which means 600&#8486;can protect the circuit
+            <br />in any case with or without the voltage drop.
+            <br />Here I use 10k just to be safe.
+            <br />
+            <br />For the resistor with the photoresistor:
+            <br />5V / 0.02A = 250&#8486;
+            <br />So any resistors larger than 250&#8486; can be used. Here I use 10k to be safe.
+            <br />
+            <br />
+        </div>
+        <div>
+            <br /><img src="h4/s.JPG" width=600>
+            <br />Schematic - there are three main parts -- a photoresistor with a 10k resisitor
+            <br /> a LED strip, and a transistor with a 10k resistor
+            <br />
+            <br /><img src="h4/p.JPG" width=600>
+            <br /><img src="h4/s2.JPG" width=600>
+            <br />Circuit
+            <br />
+            <br /><img src="h4/code.png" width=600>
+            <br />Code
+            <br />
+            <br /><img src="h4/v.gif" width=600>
+            <br />Operation -- the LED strip with change as my hands change the lighting around
+            <br />the photoresistor
+        </div>
+    </body>
+</html>
