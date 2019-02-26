@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Willa Yang's HCDE 439 Physical Computing Page!</title>
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Willa Yang's Assignment 7!</h1>
+            <img src="h7/p.jpg" width=400>
+        </div>
+        <div class="formula">
+        <div>
+            <br />For the resistor with the photoresistor and thermo sensor,
+            <br />5V / 0.02A = 250&#8486;
+            <br />So any resistors larger than 250&#8486; can be used. Here I use 10k.
+            <br />
+            <br />The sensor reads from 448 to 867 out of 1023
+            <br />so the voltage of the photoresistor/thermo sensor ranges from 5*448/1023 = 2.19V,
+            <br />to 5*867/1023 = 4.24V
+            <br />
+            <br />For the resistor that connects with the transistor:
+            <br />The ideal current that flows through the microcontroller is 0.02A,
+            <br />To protect it, 12V / 0.02A = 600&#8486;, which means 600&#8486; can protect the circuit in any case with
+            <br />or without the voltage drop.
+            <br />Here I use 10k just to be safe.
+            <br />
+            <br />
+            <br /><img src="h7/s.JPG" width=600>
+            <br />Schematic - a light sensor, thermo sensor, and a motor with transistor
+            <br />
+            <br /><img src="h7/p.jpg" width=600>
+            <br />Circuit
+            <br />
+            <br /><img src="h7/ar.png" width=600>
+            <br />Arduino Code
+            <br />
+            <br />
+            <br /><img src="h7/1.png" width=600>
+            <br /><img src="h7/2.png" width=600>
+            <br /><img src="h7/3.png" width=600>
+            <br />js
+            <br />
+            <br />
+            <br /><img src="h6/html.png" width=600>
+            <br />html
+            <br />
+            <br />
+            <br /><img src="h7/v.gif" width=500>
+            <br />Operation -- the height changes when I change the lighting around the light sensor.
+            the color becomes deeper when I touch the thermo sensor. I hit "o" to turn on the motor and hit another key to turn it off
+    </body>
+</html>
